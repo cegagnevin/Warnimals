@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="fr">
+	<head>
+		<meta charset="utf-8" />
+		<link rel="shortcut icon" href="../images/favicon.ico" type="image/x-icon">
+	    <link rel="icon" href="../images/favicon.ico" type="image/x-icon"> 
+		<link rel="stylesheet" href="../vues/style.css" >
+		<script type="text/javascript" src="../vues/jquery-1.8.0.min.js"></script>
+		<script type="text/javascript" src="../vues/jquery-ui.js"></script>
+		<script type="text/javascript" src="../vues/knob-plugin.js"></script>
+		<script type="text/javascript" src="../vues/script.js"></script>
+		<link rel="stylesheet" href="../vues/jquery-ui.css" />
+		<title>Arène</title>
+	</head>
+	<body>
+		<div id="container" class="background_arene">
+			<a href="../controleurs/ControleurPrincipal.php?actionPrincipale=InterfacePrincipale" id="home">
+				<img src="../images/maison_accueil.svg" alt="Accueil" />
+			</a>
+			
+			<input type="text" value="30" id="knobTimer" data-fgColor="d19000" data-max="30" data-min="0" data-step="1" disabled>
+			
+			<div id="animal1">
+			</div>
+			
+			<div id="animal2">
+			</div>
+			
+			<div id="attaques_animal" class="competences">
+				<h3>Choisissez votre attaque</h3>
+				<ul class="menu_attaques">
+				</ul>
+			</div>
+			
+			<div id="defenses_animal" class="competences">
+				<h3>Choisissez votre défense</h3>
+				<ul class="menu_defenses">
+				</ul>
+			</div>
+
+			<div id="abandonner">
+				<p>Abandonner</p>
+			</div>
+			
+			<div id="arene_actions">
+				<textarea disabled></textarea>
+			</div>
+		</div>
+	</body>
+</html>

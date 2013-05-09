@@ -1,0 +1,135 @@
+<!DOCTYPE html>
+<html lang="fr">
+	<head>
+		<meta charset="utf-8" />
+		<link rel="shortcut icon" href="../images/favicon.ico" type="image/x-icon">
+	    <link rel="icon" href="../images/favicon.ico" type="image/x-icon">
+		<link rel="stylesheet" href="../vues/style.css" >
+		<script type="text/javascript" src="../vues/jquery-1.8.0.min.js"></script>
+		<script type="text/javascript" src="../vues/script.js"></script>
+		<script src="../vues/jquery-ui.js"></script>
+		<title>Centre d'entrainement</title>
+	</head>
+	<body>
+		<div id="container" class="background_entrainement">
+			<a href="../controleurs/ControleurPrincipal.php?actionPrincipale=InterfacePrincipale" id="home">
+				<img src="../images/maison_accueil.svg" alt="Accueil" />
+			</a>
+			
+			<div id="entrainements">
+				<table>
+					<tr>
+						<td>
+							<div class="entrainement individuel">
+								<h3>Entrainement individuel</h3>
+								<div class="price_body">
+									<div class="price">
+										{$entrainementIndividuel.prixEntrainementInd} po
+									</div>
+								</div>
+								<div class="features">
+									<ul>
+										<li>+{$entrainementIndividuel.attaqueOffreInd} d'attaque</li>
+										<li>+{$entrainementIndividuel.defenseOffreInd} de défense</li>
+										<li>+{$entrainementIndividuel.vieOffreInd} de vie</li>
+										<li>+{$entrainementIndividuel.levelUpOffreInd} niveau</li>
+										<li>Durée : {$entrainementIndividuel.dureeEntrainementInd}</li>
+									</ul>
+								</div>
+								<div class="proposition_footer">
+									<button id="entrainementInd" >Choisir</button>
+								</div>
+							</div>
+						</td>		
+					{if isset($entrainementsCollectifs.idEntrainementCo1)}
+						<td>
+							<div class="entrainement collectif">
+								<h3>Entrainement collectif</h3>
+								<div class="price_body">
+									<div class="price">
+										{$entrainementsCollectifs.prixEntrainementCo1} po
+									</div>
+								</div>
+								<div class="features">
+									<ul>
+										<li>+{$entrainementsCollectifs.attaqueOffreCo1} d'attaque</li>
+										<li>+{$entrainementsCollectifs.defenseOffreCo1} de défense</li>
+										<li>+{$entrainementsCollectifs.vieOffreCo1} de vie</li>
+										<li>+{$entrainementsCollectifs.levelUpOffreCo1} niveau</li>
+										<li>Durée : {$entrainementsCollectifs.dureeEntrainementCo1}</li>
+										<li>Niveau maximum : {$entrainementsCollectifs.niveauMaxCo1}</li>
+										<li>Nombre de participants : entre {$entrainementsCollectifs.nbParticipantsMinCo1} et {$entrainementsCollectifs.nbParticipantsMaxCo1}</li>
+										<li><strong>Débute le {$entrainementsCollectifs.dateDebutEntrainementCo1}</strong></li>
+									</ul>
+								</div>
+								<div class="proposition_footer">
+									<button class="collectif" id="entrainementCo1">Choisir</button>
+									<input type="hidden" value="{$entrainementsCollectifs.idEntrainementCo1}" />
+								</div>
+							</div>
+						</td>
+					{/if}
+				
+					{if isset($entrainementsCollectifs.idEntrainementCo2)}
+						<td>
+							<div class="entrainement collectif">
+								<h3>Entrainement collectif</h3>
+								<div class="price_body">
+									<div class="price">
+										{$entrainementsCollectifs.prixEntrainementCo2} po
+									</div>
+								</div>
+								<div class="features">
+									<ul>
+										<li>+{$entrainementsCollectifs.attaqueOffreCo2} d'attaque</li>
+										<li>+{$entrainementsCollectifs.defenseOffreCo2} de défense</li>
+										<li>+{$entrainementsCollectifs.vieOffreCo2} de vie</li>
+										<li>+{$entrainementsCollectifs.levelUpOffreCo2} niveau</li>
+										<li>Durée : {$entrainementsCollectifs.dureeEntrainementCo2}</li>
+										<li>Niveau maximum : {$entrainementsCollectifs.niveauMaxCo2}</li>
+										<li>Nombre de participants : entre {$entrainementsCollectifs.nbParticipantsMinCo2} et {$entrainementsCollectifs.nbParticipantsMaxCo2}</li>
+										<li><strong>Débute le {$entrainementsCollectifs.dateDebutEntrainementCo2}</strong></li>
+									</ul>
+								</div>
+								<div class="proposition_footer">
+									<button class="collectif" id="entrainementCo2">Choisir</button>
+									<input type="hidden" value="{$entrainementsCollectifs.idEntrainementCo2}" />
+								</div>
+							</div>
+						</td>
+					{/if}
+				
+					{if isset($entrainementsCollectifs.idEntrainementCo3)}
+						<td>
+							<div class="entrainement collectif">
+								<h3>Entrainement collectif</h3>
+								<div class="price_body">
+									<div class="price">
+										{$entrainementsCollectifs.prixEntrainementCo3} po
+									</div>
+								</div>
+								<div class="features">
+									<ul>
+										<li>+{$entrainementsCollectifs.attaqueOffreCo3} d'attaque</li>
+										<li>+{$entrainementsCollectifs.defenseOffreCo3} de défense</li>
+										<li>+{$entrainementsCollectifs.vieOffreCo3} de vie</li>
+										<li>+{$entrainementsCollectifs.levelUpOffreCo3} niveau</li>
+										<li>Durée : {$entrainementsCollectifs.dureeEntrainementCo3}</li>
+										<li>Niveau maximum : {$entrainementsCollectifs.niveauMaxCo3}</li>
+										<li>Nombre de participants : entre {$entrainementsCollectifs.nbParticipantsMinCo3} et {$entrainementsCollectifs.nbParticipantsMaxCo3}</li>
+										<li><strong>Débute le {$entrainementsCollectifs.dateDebutEntrainementCo3}</strong></li>
+									</ul>
+								</div>
+								<div class="proposition_footer">
+									<button class="collectif" id="entrainementCo3">Choisir</button>
+									<input type="hidden" value="{$entrainementsCollectifs.idEntrainementCo3}" />
+								</div>
+							</div>
+						</td>
+					{/if}
+					</tr>
+				</table>
+			<div id="entrainement_msg"></div>
+		</div>
+	</body>
+</html>

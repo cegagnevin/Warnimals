@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="fr">
+	<head>
+		<meta charset="utf-8" />
+		<link rel="shortcut icon" href="../images/favicon.ico" type="image/x-icon">
+	    <link rel="icon" href="../images/favicon.ico" type="image/x-icon"> 
+		<link rel="stylesheet" href="../vues/style.css" >
+		<title>Profil joueur</title>
+	</head>
+	<body id="bodyProfil">
+		<div id="container" class="background_profil">	
+			<a href="../controleurs/ControleurPrincipal.php?actionPrincipale=InterfacePrincipale" id="home">
+				<img src="../images/maison_accueil.svg" alt="Accueil" />
+			</a>
+			
+			<div id="profil">
+				{if $action == 'profil' }
+					<table id="infosJoueur">
+						<tr><td id="nomJoueur">{$joueur->getNomJoueur()}</td></tr>
+						<tr><td><img src="{$urlPicture}" id="cadrePhoto"/></td></tr>
+						<tr><td id="credit">{$joueur->getCredit()} PO</td></tr>
+						<tr><td class="stats">Victoires : {$joueur->getNbVictoires()}</td></tr>
+						<tr><td class="stats">Défaites : {$joueur->getNbDefaites()}</td></tr>
+						<tr><td class="stats">Abandons : {$joueur->getNbAbandons()}</td></tr>
+						<!--<div id="dateIns">{$joueur->getDateInscription()}</div> -->
+					</table>
+					{if $animal != null}
+						<table id="infosAnimal">
+							<tr><td id="nomAnimal">{$animal->getNomAnimal()}</td></tr>
+							<tr><td id="race">Race : {$animal->getRace()}</td></tr>
+							<tr><td id="niveau">Niveau {$animal->getNiveau()}</td></tr>
+							<tr><td id="vie">Vie : {$animal->getVie()}</td></tr>
+							<tr><td id="attaque">Attaque : {$animal->getAttaque()}</td></tr>
+							<tr><td id="defense">Defense : {$animal->getDefense()}</td></tr>
+							<tr><td class="stats">Victoires : {$animal->getNbVictoires()}</td></tr>
+							<tr><td class="stats">Défaites : {$animal->getNbDefaites()}</td></tr>
+							<tr><td class="stats">Abandons : {$animal->getNbAbandons()}</td></tr>
+						</table>
+						<img src="../images/{$animal->getRace()}/{$animal->getRace()}_1_R.svg" id="picAnimal"/>
+					{else}
+						<div id="noAnimal">Vous n'avez pas d'animal !!<br/>Vous pouvez aller à la boutique en acheter un si vous le souhaitez.</div>
+					{/if}
+				{/if}
+			</div>
+		</div>
+	</body>
+</html>

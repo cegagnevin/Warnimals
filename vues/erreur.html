@@ -1,0 +1,19 @@
+<!DOCTYPE html>
+<html lang="fr">
+	<head>
+		<meta charset="utf-8" />
+		<link rel="shortcut icon" href="../images/favicon.ico" type="image/x-icon">
+	    <link rel="icon" href="../images/favicon.ico" type="image/x-icon">"" type="image/x-icon" > 
+		<link rel="stylesheet" href="../vues/style.css" >
+		<title>Erreur...</title>
+	</head>
+	<body>
+		<a href="../controleurs/ControleurPrincipal.php?actionPrincipale=InterfacePrincipale" id="home">HOME</a>
+		<div id="div_erreur">
+				<h1>Une erreur est survenue...</h1>
+				<h2>Type d'erreur : {$erreur_type}</h2><br/>
+				<h2>Message : {$erreur_message}</h2><br/>
+				<pre>{$erreur_trace}</pre>				
+		</div>
+	</body>
+</html>

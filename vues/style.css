@@ -1,0 +1,971 @@
+/********************************************************************************
+***********************************  PLAN     ***********************************
+*********************************************************************************
+	
+		  | - A - Style global
+		  | - B - erreur.html
+		  | - C-  index.html
+		  | - D-  interfacePrincipale.html
+		  | - E-  market.html
+		  | - F-  entrainement.html
+		  | - G-  arene.html
+		  | - H-  indexCombats.html
+		  | - I-  paris.html
+		  | - J-  profil.html
+
+/*********************************************************************************
+***************************** A-  Style global ***********************************
+**********************************************************************************/
+
+html 
+{
+	height: 100%;
+    width: 100%;
+}
+    
+body 
+{
+	height: 100%;
+    width: 100%;
+    margin: 0;
+    padding: 0;
+    font-family: Ubuntu, arial, verdana;
+    overflow:hidden;
+}
+
+.centrer
+{
+	text-align: center;
+}
+
+#home
+{
+	width: 50px;
+	height: 50px;
+	margin: auto;
+	/*padding: 7px;
+	border: 2px solid purple;
+	border-radius: 100%;
+	vertical-align: middle;
+	display: table-cell;
+	box-shadow: 0 0 8px 1px rgba(204, 102, 204, 0.7);
+	*/
+	border: none;
+	text-decoration : none;
+	position: fixed;
+	top: 2%;
+	left: 2%;
+}
+
+.disabled 
+{
+	background: lightgrey;
+	color: grey;	
+}
+
+#container
+{
+	text-align: center;
+}
+
+			
+/*********************************************************************************
+***************************** B-  erreur.html *************************************
+**********************************************************************************/
+
+div#div_erreur
+{
+    width: 500px;
+    margin: auto;
+    text-align: left;
+}
+
+			
+/*********************************************************************************
+***************************** C-  index.html **************************************
+**********************************************************************************/
+
+.background_index
+{
+	width : 100%;	
+	height: 100%;	
+	background: url(../images/index.svg) no-repeat top center fixed;
+    -moz-background-size: cover;
+	-webkit-background-size: cover;	
+	-o-background-size: cover;
+	background-size: cover;	
+}
+
+#btn_jouer
+{
+	/*font-family: Arial,sans-serif;
+    font-size: 1.6em;
+    width: 130px;
+    height: 43px;
+    text-align: center;
+    color: lightgrey;
+    background: #444;
+    background: -webkit-linear-gradient( #555, #2C2C2C);
+    background:    -moz-linear-gradient( #555, #2C2C2C);
+    background:     -ms-linear-gradient( #555, #2C2C2C);
+    background:      -o-linear-gradient( #555, #2C2C2C);
+    background:         linear-gradient( #555, #2C2C2C);	
+    border-radius: 8px;
+    text-shadow: 0px 1px 0px white;
+    text-shadow: 0px 1px 0px rgba( 255, 255, 255, 0.2);
+    box-shadow: 0 0 5px rgba( 0, 0, 0, 0.5),
+             						  0 -1px 0 rgba( 255, 255, 255, 0.4);
+
+	*/
+    position: absolute;
+    bottom: 10%;
+}
+
+#btn_jouer:hover
+{
+    cursor: pointer;
+}
+
+
+#tab_jouer
+{
+    height: 100%;
+    width: 100%;
+    border-collapse: collapse;
+    text-align: center;
+}
+
+table#tab_jouer td
+{
+    height: 100%;
+    padding: 0;
+    vertical-align: middle;
+}
+
+div#div_jouer
+{
+    width: 150px;
+    margin: auto;
+    text-align: left;
+}
+
+
+/*********************************************************************************
+************************** D-  interfacePrincipale.html ***************************
+**********************************************************************************/
+
+.background_interfacePrincipale
+{
+	width : 100%;
+	height: 100%;	
+	background: url(../images/accueil_decoupes/decoupe_fond.svg) no-repeat top center fixed;
+    -moz-background-size: cover;	
+	-webkit-background-size: cover;	
+	-o-background-size: cover;
+	background-size: cover;	
+}
+
+#backgroundArene
+{
+	position : absolute;
+	width : 20%;
+	top : 35%;
+	left : 0%;
+}
+
+
+#backgroundEntrainement
+{
+	position : absolute;
+	width : 20%;
+	top : 35%;
+	left: 20%;
+}
+
+#backgroundProfil
+{
+	position : absolute;
+	width : 20%;
+	top : 35%;
+	left : 40%;
+}
+
+#backgroundParis
+{
+	position : absolute;
+	width : 20%;
+	top : 35%;
+	left : 60%;
+}
+
+#backgroundMarket
+{
+	position : absolute;
+	width : 20%;
+	top : 35%;
+	left : 80%;
+}
+
+
+.house
+{
+	width : 100%;
+}
+
+.house:hover 
+{
+	cursor : pointer;
+}
+
+/*********************************************************************************
+***************************** E-  market.html *************************************
+**********************************************************************************/
+
+.background_market	
+{
+	width : 100%;
+	height: 100%;	
+	background: url(../images/market.svg) no-repeat top center fixed;
+    -moz-background-size: cover;	
+	-webkit-background-size: cover;	
+	-o-background-size: cover;
+	background-size: cover;	
+}
+
+table#tab_animaux
+{
+    height: 25%;
+    width: 25%;
+    border-collapse: collapse;
+    text-align: center;
+    border:1px solid black;
+    margin : 100px auto auto auto; 
+}
+
+table#tab_animaux td
+{
+    height: 25%;
+    padding: 0;
+    vertical-align: middle;
+    border:1px solid black
+}
+
+#marketMain {
+	margin: auto;
+	width: 70%;
+	max-height: 90%;
+	position: absolute;
+	top: 5%;
+	left: 15%;
+	overflow-y: auto;
+	
+	box-shadow: 0 0 15px 1px rgba(0, 0, 0, 0.5);
+}
+
+#formMiseEnVenteAnimal {
+	margin: auto;
+	width: 100%;
+	
+	padding-top: 20px;
+	padding-bottom: 20px;
+	font-size: 1.5em;
+	
+	background: #95815b;
+	background: rgba(149, 129, 92, 0.7);
+}
+
+#formMiseEnVenteAnimal #vendre {
+	padding-top: 10px;
+	padding-bottom: 10px;
+	padding-left: 20px;
+	padding-right: 20px;
+	background: #f4cf67;
+	border: 1px solid #f5d47a;
+	border-radius: 5px;
+	margin-left: 20px;
+	font-weight: bold;
+	cursor: pointer;
+	font-size: 0.8em;
+}
+
+#formMiseEnVenteAnimal #annulerVente {
+	padding-top: 10px;
+	padding-bottom: 10px;
+	padding-left: 20px;
+	padding-right: 20px;
+	border-radius: 5px;
+	margin-left: 20px;
+	font-weight: bold;
+	cursor: pointer;
+	font-size: 0.8em;
+	background: #e74c3c;
+	color: white;
+	border: 1px solid white;
+}
+
+#formMiseEnVenteAnimal input {
+	height: 30px;
+	border-radius: 5px;
+	position: relative; 
+	top: -4px;
+	padding-left: 4px;
+	padding-right: 4px;
+	color: #4b4635;
+}
+
+#formMiseEnVenteAnimal #erreurMarket {
+	color: #c20000;
+	text-decoration: underline;
+	text-align: center;
+}
+
+
+#listeAnimauxEnVente {
+	margin: auto;
+	width: 100%;
+	
+	padding-top: 30px;
+	padding-bottom: 30px;
+
+	background: #3a3a3a;
+	background: -webkit-linear-gradient(rgba(50, 50, 50, 1), rgba(80, 80, 80, 0.7));
+	background: -moz-linear-gradient(rgba(50, 50, 50, 1), rgba(80, 80, 80, 0.7));
+	background: -ms-linear-gradient(rgba(50, 50, 50, 1), rgba(80, 80, 80, 0.7));
+	background: -o-linear-gradient(rgba(50, 50, 50, 1), rgba(80, 80, 80, 0.7));
+	background: linear-gradient(rgba(50, 50, 50, 1), rgba(80, 80, 80, 0.7));
+}
+
+#listeAnimauxEnVente .acheter {
+	padding-top: 10px;
+	padding-bottom: 10px;
+	padding-left: 20px;
+	padding-right: 20px;
+	border-radius: 5px;
+	font-weight: bold;
+	cursor: pointer;
+	font-size: 0.8em;
+}
+
+#listeAnimauxEnVente .transaction {
+	width: 90%;
+	margin: auto;
+	margin-top: 5px;
+	margin-bottom: 5px;
+	border-radius: 5px;
+	padding-top: 5px;
+	padding-bottom: 5px;
+	padding-left: 50px;
+	font-weight: bold;
+	
+	background: #3a3a3a;
+	background: rgba(50, 50, 50, 0.7);
+}
+
+#listeAnimauxEnVente .transaction:hover {
+	background: #4d4d4d;
+	background: rgba(77, 77, 77, 0.7);
+}
+
+#listeAnimauxEnVente .transaction .highlight {
+	font-size: 1.2em;
+	color: #efefef;
+	text-shadow: 2px 2px 5px #848484;
+	font-weight: bold;
+}
+
+#listeAnimauxEnVente .transaction td {
+	text-align: left;
+	width: 25%;
+}
+
+
+#listeAnimauxEnVente .transaction .nomAnimal {
+	font-size: 1.3em;
+	color: #f4edc9;
+	text-shadow: 2px 2px 5px #848484;
+	font-weight: bold;
+}	
+
+#listeAnimauxEnVente .transaction .prix {
+	font-size: 1.5em;
+	color: #55b800;
+	font-weight: bold;
+}
+
+#listeAnimauxEnVente .transaction .raceAnimal {
+	font-size: 1.25em;
+	color: #c6a042;
+	font-weight: bold;
+}
+
+#listeAnimauxEnVente .transaction .dateVente {
+	font-size: 0.8em;
+	color: #e6e6e6;
+	font-style: italic;
+}
+
+
+/*********************************************************************************
+***************************** F-  entrainement.html ******************************
+**********************************************************************************/
+
+.background_entrainement
+{
+	width : 100%;
+	height: 100%;
+	background: url(../images/entrainement.svg) no-repeat top center fixed;
+    -moz-background-size: cover;
+	-webkit-background-size: cover;
+	-o-background-size: cover;
+}
+
+/* Entrainements proposés */
+div#entrainements {
+	position: relative;
+	top: 20%;
+	text-align: center;
+	color: #fff;
+	font-size: 12px;
+	text-align: center;
+	width: 800px;
+	height: 300px;
+	margin: auto;
+}
+
+div#entrainements table
+{
+	margin: auto;
+}
+
+/* Un entrainement */
+div#entrainements .entrainement 
+{
+	width: 220px;
+	margin-left: 10px;
+	margin-right: 10px;
+	float: left;
+	list-style-type: none;
+	box-shadow: 0 0 15px 1px rgba(0, 0, 0, 0.5);
+	zoom: 100%;
+}
+
+/* Au survol d'un entrainement */
+div#entrainements .entrainement:hover
+{
+	zoom: 110%;
+	position: relative;
+	top: -10px;
+}
+
+/* Coloration pour les entrainements individuels */
+div#entrainements .individuel 
+{
+	/* #f9b749 to #de7a28 */
+	background: #de7a28;
+	background: -webkit-linear-gradient(rgba(222, 122 ,40 , 1), rgba(249,183,73,0.7));
+	background: -moz-linear-gradient(rgba(222, 122 ,40 , 1), rgba(249,183,73,0.7));
+	background: -ms-linear-gradient(rgba(222, 122 ,40 , 1), rgba(249,183,73,0.7));
+	background: -o-linear-gradient(rgba(222, 122 ,40 , 1), rgba(249,183,73,0.7));
+	background: linear-gradient(rgba(222, 122 ,40 , 1), rgba(249,183,73,0.7));
+}
+
+/* Coloration pour les entrainements collectifs */
+div#entrainements .collectif
+{
+	background: #3a3a3a;
+	background: -webkit-linear-gradient(rgba(50, 50, 50, 1), rgba(80, 80, 80, 0.7));
+	background: -moz-linear-gradient(rgba(50, 50, 50, 1), rgba(80, 80, 80, 0.7));
+	background: -ms-linear-gradient(rgba(50, 50, 50, 1), rgba(80, 80, 80, 0.7));
+	background: -o-linear-gradient(rgba(50, 50, 50, 1), rgba(80, 80, 80, 0.7));
+	background: linear-gradient(rgba(50, 50, 50, 1), rgba(80, 80, 80, 0.7));
+}
+
+/* Type d'entrainement */
+div#entrainements h3 {
+	text-transform: uppercase;
+	padding: 15px 5px;
+	font-size: 14px;
+	font-weight: bold;
+}
+
+/* Prix de l'entrainement (cercle autour) */
+div#entrainements .price_body {
+	width: 125px;
+	height: 125px;
+	margin: 0 auto 15px auto;
+	border: 2px solid #fff;
+	border-radius: 100%;
+	display: table;
+}
+
+/* Prix de l'entrainement */
+div#entrainements .price {
+	font-size: 30px;
+	font-weight: bold;
+	vertical-align: middle;
+	display: table-cell;
+}
+
+/* Amélioration qu'apporte l'entrainement */
+div#entrainements .features ul {
+	list-style-type: none;
+	padding: 5px 0;
+	text-align: center;
+	height: 120px;
+}
+
+/* Footer de la proposition d'entrainement */
+div#entrainements .proposition_footer {
+	padding: 10px;
+	margin-top: 10px;
+	background: #2d2d2d;
+	background: -webkit-linear-gradient(rgba(50, 50, 50, 0.95), rgba(15, 15, 15, 0.95));
+	background: -moz-linear-gradient(rgba(50, 50, 50, 0.95), rgba(15, 15, 15, 0.95));
+	background: -ms-linear-gradient(rgba(50, 50, 50, 0.95), rgba(15, 15, 15, 0.95));
+	background: -o-linear-gradient(rgba(50, 50, 50, 0.95), rgba(15, 15, 15, 0.95));
+	background: linear-gradient(rgba(50, 50, 50, 0.95), rgba(15, 15, 15, 0.95));
+}
+
+/* Bouton "choisir" */
+div#entrainements .proposition_footer button
+{
+	color: #fff;
+	font-size: 11px;
+	display: inline-block;
+	text-decoration: none;
+	font-weight: bold;
+	padding: 4px 20px;
+	border-radius: 15px;
+	cursor: pointer;
+	background: #de7a28;
+	background: -webkit-linear-gradient(rgba(222, 122 ,40 , 1), rgba(249,183,73,0.7));
+	background: -moz-linear-gradient(rgba(222, 122 ,40 , 1), rgba(249,183,73,0.7));
+	background: -ms-linear-gradient(rgba(222, 122 ,40 , 1), rgba(249,183,73,0.7));
+	background: -o-linear-gradient(rgba(222, 122 ,40 , 1), rgba(249,183,73,0.7));
+	background: linear-gradient(rgba(222, 122 ,40 , 1), rgba(249,183,73,0.7));
+}
+
+/* Bouton "choisir" desactivé*/
+div#entrainements .proposition_footer button[disabled]
+{
+	background: lightgrey;
+}
+
+/* Message du centre d'entrainement */
+div#entrainement_msg
+{
+	font-size : 2em;
+	clear: both;
+	text-align: center;
+	color : white;
+	text-shadow : 1px 1px 1px #222222;
+}
+
+
+
+
+
+/*********************************************************************************
+********************************* G-  arene.html *********************************
+**********************************************************************************/
+
+/* Défintion du background de l'arène */
+.background_arene
+{	
+	width : 100%;
+	height: 100%;
+	background: url(../images/arene.svg) no-repeat top center fixed;
+    -moz-background-size: cover;
+	-webkit-background-size: cover;
+	-o-background-size: cover;
+	background-size: cover;
+}
+
+#animal1 {
+	position: absolute;
+	bottom: 20%;
+	left: 5%;
+	z-index: 40;
+}
+
+
+#animal2 {
+	position: absolute;
+	bottom: 20%;
+	right: 5%;
+	z-index: 40;
+}
+
+#arene_actions {
+	position: fixed;
+	bottom: 0px;
+	height: 20%;
+	width: 100%;
+	text-align: center;
+	z-index: 29;
+}
+
+#arene_actions textarea {
+	height: 100%;
+	width: 80%;
+	margin: auto;
+	background: #3a3a3a;
+	background: -webkit-linear-gradient(rgba(50, 50, 50, 1), rgba(80, 80, 80, 0.7));
+	background: -moz-linear-gradient(rgba(50, 50, 50, 1), rgba(80, 80, 80, 0.7));
+	background: -ms-linear-gradient(rgba(50, 50, 50, 1), rgba(80, 80, 80, 0.7));
+	background: -o-linear-gradient(rgba(50, 50, 50, 1), rgba(80, 80, 80, 0.7));
+	background: linear-gradient(rgba(50, 50, 50, 1), rgba(80, 80, 80, 0.7));
+	color: white;
+	font-size: 1.5em;
+	border-radius: 2px;
+	z-index: 30;
+}
+
+.competences {
+	background: #f5f5f5;
+	background: rgba(245, 245, 245, 0.9);
+	width: 300px;
+	text-align: left;
+	margin: auto;
+	border-radius: 5px;
+	padding-bottom: 10px;
+	display: none;
+}
+
+.competences h3 {
+	background: darkgrey;
+	text-align: center;
+	border-top-left-radius: 5px;
+	border-top-right-radius: 5px;
+	padding-top: 3px;
+	padding-bottom: 3px;
+}
+
+.competences ul{
+	background: none;
+	border: none;
+
+}
+
+.progressbar {
+	margin-bottom: 20px;
+}
+
+#knobTimer {
+	color : #d19000;
+	display: none;	
+}
+
+#abandonner {
+	position: fixed;
+	top: 10%;
+	right: 10%;
+	background: #e74c3c;
+	color: white;
+	padding-top: 5px;
+	padding-bottom: 5px;
+	padding-left: 20px;
+	padding-right: 20px;
+	border-radius: 10px;
+}
+
+#abandonner:hover {
+	background: #ec7063;
+	cursor: pointer;
+}
+
+/*********************************************************************************
+********************************* H-  indexCombats.html **************************
+**********************************************************************************/
+
+
+/* Combats */
+div#combats {
+	text-align: center;
+	font-size: 12px;
+	
+	width:900px;
+	height: 250px;
+    position:absolute;
+    left: 50%;
+    top : 50%;
+    margin-left: -600px;
+	margin-top: -125px;
+	/*width : 62%;
+	height : 33%;
+	margin-left:20%;
+	margin-top : 12%;*/
+}
+
+/* Panneau d'affichage de la page d'accueil des combat */
+.panneau {
+	width: 500px;
+	height: 250px;
+	margin: 0 auto 15px auto;
+	border: 2px solid #fff;
+	border-radius: 5%;
+	border-color : #a05951;
+	/*
+	background-color : #a05951;
+	background: -webkit-linear-gradient(rgba(50, 50, 50, 1), rgba(80, 80, 80, 0.7));
+	background: -moz-linear-gradient(rgba(50, 50, 50, 1), rgba(80, 80, 80, 0.7));
+	background: -ms-linear-gradient(rgba(50, 50, 50, 1), rgba(80, 80, 80, 0.7));
+	background: -o-linear-gradient(rgba(50, 50, 50, 1), rgba(80, 80, 80, 0.7));
+	background: linear-gradient(rgba(50, 50, 50, 1), rgba(80, 80, 80, 0.7));
+	*/
+	background: #de7a28;
+	background: -webkit-linear-gradient(rgba(222, 122 ,40 , 1), rgba(249,183,73,0.7));
+	background: -moz-linear-gradient(rgba(222, 122 ,40 , 1), rgba(249,183,73,0.7));
+	background: -ms-linear-gradient(rgba(222, 122 ,40 , 1), rgba(249,183,73,0.7));
+	background: -o-linear-gradient(rgba(222, 122 ,40 , 1), rgba(249,183,73,0.7));
+	background: linear-gradient(rgba(222, 122 ,40 , 1), rgba(249,183,73,0.7));
+	
+	cursor: pointer;
+}
+
+
+/* Texte à l'intérieur du panneau */
+.panneau p {
+	text-shadow : 1px 1px 1px #222222;
+	vertical-align: middle;
+	text-transform: uppercase;
+	font-size : 5em;
+	color : #333;
+	font-weight: bold;
+}
+
+/* Au survol du panneau */
+div#combats .panneau:hover
+{
+	font-size : 1.2em; 
+}
+
+/* Texte de création de combat */
+#panneau {
+	text-align: center;
+	text-shadow : 1px 1px 1px #222222;
+	text-transform: uppercase;
+	font-size : 2em;
+	font-weight: bold;
+	border: 2px solid #fff;
+	border-radius: 5%;
+	color : #333;
+	width: 600px;
+	height: 300px;
+    position:absolute;
+    left: 50%;
+    top : 50%;
+    margin-left: -150px;
+	margin-top: -300px;
+	
+	border-color : #a05951;
+	background: #de7a28;
+	background: -webkit-linear-gradient(rgba(222, 122 ,40 , 1), rgba(249,183,73,0.7));
+	background: -moz-linear-gradient(rgba(222, 122 ,40 , 1), rgba(249,183,73,0.7));
+	background: -ms-linear-gradient(rgba(222, 122 ,40 , 1), rgba(249,183,73,0.7));
+	background: -o-linear-gradient(rgba(222, 122 ,40 , 1), rgba(249,183,73,0.7));
+	background: linear-gradient(rgba(222, 122 ,40 , 1), rgba(249,183,73,0.7));
+}
+
+/* Tableau des boutons creer et rejoindre un combat */
+#tab_boutons {
+	border-spacing : 100px 0px;	
+} 
+
+/* Titre */
+.title {
+	color : #111;
+	font-size :1.1em;
+}
+
+/* Tableau des combats 
+#tab_combats {
+	width: 600px; 
+	height: 400px; 
+	position: absolute; 
+	left: 50%;  
+	top : 70%; 
+	margin-left: -150px; 
+	margin-top : -300px; 
+	border: 2px solid #fff;
+	border-radius: 1%;
+}*/
+
+tab_combats_create , td {
+	width : 10%; 
+}
+
+#tab_combats_create {
+	width: 600px; 
+	height: 250px; 
+	position: absolute; 
+	left: 50%;  
+	top : 70%; 
+	margin-left: -150px; 
+	border-radius: 1%;
+}
+
+/* Ligne d'entête du tableau des combats */
+#header_tab_combat {
+	background: #de7a28;
+	background: -webkit-linear-gradient(rgba(222, 122 ,40 , 1), rgba(249,183,73,0.8));
+	background: -moz-linear-gradient(rgba(222, 122 ,40 , 1), rgba(249,183,73,0.8));
+	background: -ms-linear-gradient(rgba(222, 122 ,40 , 1), rgba(249,183,73,0.8));
+	background: -o-linear-gradient(rgba(222, 122 ,40 , 1), rgba(249,183,73,0.8));
+	background: linear-gradient(rgba(222, 122 ,40 , 1), rgba(249,183,73,0.8));
+}
+
+/* Lignes dans le tableau des combats */
+.line_tab_combat {
+	background: #de7a28;
+	background: -webkit-linear-gradient(rgba(204, 202 ,190 , 0.9), rgba(204, 202, 190, 0.9));
+	background: -moz-linear-gradient(rgba(204, 202 ,190 , 0.9), rgba(204, 202, 190, 0.9));
+	background: -ms-linear-gradient(rgba(204, 202 ,190 , 0.9), rgba(204, 202, 190, 0.9));
+	background: -o-linear-gradient(rgba(204, 202 ,190 , 0.9), rgba(204, 202, 190, 0.9));
+	background: linear-gradient(rgba(204, 202 ,190 , 0.9), rgba(204, 202, 190, 0.9));
+}
+}
+
+/* Lignes dans le tableau des combats, lors du survol */
+.line_tab_combat {
+	cursor : pointer;
+}
+
+/* Message */
+.message, .messageRejoint {
+	color : #333;
+	font-size : 0.8em;
+}
+
+.money{
+	color : red;
+}
+
+/*********************************************************************************
+***************************** I-  Paris ******************************************
+**********************************************************************************/
+
+.background_paris
+{
+	width : 100%;
+	height: 100%;
+	background: url(../images/paris.svg) no-repeat top center fixed;
+    -moz-background-size: cover;
+	-webkit-background-size: cover;
+	-o-background-size: cover;
+	background-size: cover;
+}
+
+/*********************************************************************************
+***************************** J-  Profil *****************************************
+**********************************************************************************/
+
+/* La page de profil */
+#bodyProfil
+{
+	font-family: AR CHRISTY;
+}
+
+/* Le background de la page de profil*/
+.background_profil
+{
+	width : 100%;
+	height: 100%;
+	background: url(../images/profil.svg) no-repeat top center fixed;
+    -moz-background-size: cover;
+	-webkit-background-size: cover;
+	-o-background-size: cover;
+	background-size: cover;
+}
+
+/* La partie affichée concernant le joueur */
+#infosJoueur 
+{
+	width: 35%; 
+	height: 100px; 
+	position: absolute; 
+	top : 25%;
+	left : 10%;
+	border-radius: 1%;
+	/*border: 2px solid #fff;*/
+}
+
+/* Le nom du joueur affiché */
+#nomJoueur
+{
+	color: rgb(53, 37, 25);
+	font-size : 350%;
+}
+
+/* Le cadre de la photo du joueur */
+#cadrePhoto
+{
+	width : 150px;
+	height : 150px;
+	margin-top : 5%;
+	border: 2px solid rgb(53, 37, 25);
+}
+
+#picAnimal
+{
+	width : 200px;
+	height : 200px;
+	position: absolute; 
+	top : 45%;
+	left : 73%;
+	
+}
+
+/* Les crédits du joueur */
+#credit
+{
+	padding-bottom : 25px;
+	font-size : 150%;
+}
+
+/* La partie concernant l'animal affiché */
+#infosAnimal
+{
+	width: 25%; 
+	height: 200px; 
+	position: absolute; 
+	top : 30%;
+	left : 50%;
+	border-radius: 1%;
+	color: rgb(162, 126, 76);
+	padding-top : 10px;
+	/*border: 2px solid #fff;*/
+}
+
+#noAnimal
+{
+	width: 25%; 
+	height: 200px; 
+	position: absolute; 
+	top : 40%;
+	left : 60%;
+	font-size : 40px;
+	color: rgb(103, 63, 31);
+	padding-top : 10px;
+}
+
+/* Le nom de l'animal */
+#nomAnimal 
+{
+	font-size : 300%;
+	color: rgb(103, 63, 31);
+	padding-bottom : 5%;
+}
+
+/* Le reste des caractéristiques */
+#race, #niveau, #vie, #attaque, #defense
+{
+	font-size : 150%;
+}
+
+/* Les stats */
+.stats
+{
+	font-size : 150%;
+	color: rgb(103, 63, 31);
+}
